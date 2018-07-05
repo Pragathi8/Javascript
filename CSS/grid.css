@@ -1,0 +1,26 @@
+.container_12{
+    background: cyan;
+}
+
+nav li{
+    display: inline;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.primary{
+    background-color: burlywood;
+}
+
+aside{
+    background-color: teal;
+}
+
+header{
+    background-color: brown;
+    /* overflow: hidden; */
+}
+
+.main{
+    margin: 20px 0px;
+}
