@@ -1,0 +1,25 @@
+li {
+    display: inline;  
+}
+a{
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+    float: left;
+    padding-left: 60px;
+    display: block;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+a:hover{
+    color: #1abc9c;
+}
+h1{
+    margin: 0px;
+}
+i{
+    letter-spacing: 80px;
+}
