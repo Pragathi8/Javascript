@@ -5,18 +5,11 @@ const browserSync = require('browser-sync');
 // compile my scss to css and place them in src/css folder
 gulp.task('sass', () => {
   return gulp
-          .src(['./public/scss/*.scss'])
+          .src(['./public/scss/index.scss'])
           .pipe(sass()) // convert sass to css
           .pipe(gulp.dest('./public/css')) // take css to source
           .pipe(browserSync.stream()); 
 });
-
-gulp.task('css', () => {
-    return gulp
-            .src(['./node_modules/bootstrap/dist/css/bootstrap.min.css'])
-            .pipe(gulp.dest('./public/css'))
-            .pipe(browserSync.stream());
-  });
 
 // Move the javascript files into our /src/js folder
 gulp.task('js', () => {
@@ -36,4 +29,4 @@ gulp.task('serve', ['sass'], () => {
   gulp.watch('./public/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['css','js', 'serve']);  
+gulp.task('default', ['js', 'serve']);  
