@@ -1,0 +1,177 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 244, 244);
+;
+}
+header{
+    img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+nav{
+    div{
+        a{
+            font-weight: 200;
+            font-family: cursive;
+            font-size: 18px;
+        }
+    }
+}
+
+.Search{
+    button{
+        font-weight: 200;
+            font-family: cursive;
+            font-size: 18px;
+    }
+}
+
+#navbarColor02{
+    ul{
+        padding-left: 40%;
+    }
+}
+
+.container-2, .modal-body{
+    display: flex;
+    flex-wrap:wrap; 
+    flex: 1 1 auto;
+}
+
+.searchMovie{
+    flex-grow: 1;
+    width: 38%;
+    margin: 1.2%;
+}
+
+#PopularImages{
+    width: 100%;
+    align-content: center;
+}
+
+.listOfPop{
+    flex-grow: 1;
+    width:20%;
+    margin: 1rem;
+}
+
+.popular-card{
+    // display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.item1{
+    flex-grow: 1;
+}
+
+.item2{
+    flex-grow: 2;
+}
+
+.title-popular{
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 3rem;
+    color: black;
+    font-weight: 300;
+}
+
+.row{
+    padding: 1rem;
+}
+
+.meta{
+    background-color: lightgray;
+}
+
+.card-header{
+    color: black;
+    font-weight: 600;
+    font-size: 17.6px;
+    font-family: cursive;
+}
+
+.card-text{
+    padding-top: 1rem;
+    color: rgb(77, 77, 77);
+    font-size: 14.4px;
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+@media(max-width:600px){
+    .container-2{
+       flex-direction: column;
+    }
+    .card{
+        width: auto;
+    }
+}
+
+@media(max-width:900px){
+    .modal-body{
+        flex-direction: column;
+    }
+}
+.pop-more{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    font-size: 14.4px;
+    font-family: cursive;
+    text-align: center;
+    padding-left: 0.2rem;
+}
+
+.container-3{
+    display: flex;
+    flex-direction: row;
+}
+
+#more-movies{
+    float: right;
+    padding-right:5rem;
+}
+
+#pop-images{
+    width: 30%;
+    height: 30%;
+}
+
+#myModal{
+    width:100%;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 800px;
+    margin: 1.75rem auto;
+}
+
+}
+#navbarColor02 ul {
+    padding-left: 0%;
+}
+
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.favorite{
+    float: right;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+.favorite:hover{
+    color: red;
+}

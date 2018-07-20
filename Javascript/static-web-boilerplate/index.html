@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="con1-item2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <header>
+          <img src="./src/img/movie.jpg" alt="Movie logo">
+        </header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active a1">
+              <a class="nav-link" href="#">Discover
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active a2">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item active a3">
+              <a class="nav-link" href="#">TV</a>
+            </li>
+            <li class="nav-item active a4">
+              <a class="nav-link" href="#">People</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 Search">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search for Movie" name="searchMovie" id="searchMovie">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="popupId">
+              Search
+            </button>
+          </form>
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body d-flex flex-wrap" id="popup-body">
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="popular">
+      <div class="title-popular">popular Movies</div>
+      <div class="container-2 d-flex flex-wrap">
+
+        <div class="displayMore" id="more"></div>
+      </div>
+
+      <div id="more-movies">
+        <button type="button" class="btn btn-secondary" id="moreMovies">
+          <i class="fas fa-arrow-circle-right fa-3x"></i>
+        </button>
+      </div>
+      <br>
+      <div class="collection">
+        <div class="col-title">
+          <h1>Top Collection</h1>
+        </div>
+        <div class="container-3 d-flex flex-wrap">
+
+        </div>
+      </div>
+    </div>
+    <footer id="footer-main" style="background-color: black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <p style="color: white">uncopyright 2018, do what you want</p>
+            <p style="color: white">coded by
+              <i style="color: white">Pragathi</i>
+            </p>
+          </div>
+          <div class="col-sm-3 content-footer">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" style="color: white">Home</a>
+              </li>
+              <li>
+                <a href="" style="color: white">what we do</a>
+              </li>
+              <li>
+                <a href="" style="color: white">about</a>
+              </li>
+              <li>
+                <a href="" style="color: white">Latest</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 content-footer">
+            <ul class="list-unstyled" style="color: white">
+              <li>
+                <a class="foob social-fb"  name="facebook"  href="https://www.facebook.com/"  alt="facebook">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="foob social-tw"  name="twitter"  href="https://twitter.com/"  alt="twitter">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                </a>
+
+              </li>
+              <li>
+                <a class="foob social-ld"  name="linkedin"  href="https://in.linkedin.com/"  alt="linkedin">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="foob social-gp"  name="google plus"  href="https://plus.google.com/"  alt="googleplus">
+
+                  <i class="fab fa-google-plus-square fa-2x"></i>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 content-footer">
+            <h6 style="color: white">Privacy</h6>
+            <p style="color: white">Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are
+              courtesy of Warner Bros. Entertainment.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
