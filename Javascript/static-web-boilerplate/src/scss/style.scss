@@ -118,14 +118,6 @@ nav{
         flex-direction: column;
     }
 }
-.pop-more{
-    text-decoration: none;
-    color: rgb(77, 77, 77);
-    font-size: 14.4px;
-    font-family: cursive;
-    text-align: center;
-    padding-left: 0.2rem;
-}
 
 .container-3{
     display: flex;
@@ -174,4 +166,12 @@ nav{
 
 .favorite:hover{
     color: red;
+}
+
+.radio-inline{
+    margin-right: 0.4rem;
+}
+
+.form-control{
+    display: initial;
 }
