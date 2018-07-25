@@ -1,18 +1,32 @@
 {
   "action": [
     {
-      "id": "351286",
-      "title": "Jurassic World: Fallen Kingdom",
-      "poster_path": "/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
-      "overview": "Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.",
-      "release_date": "2018-06-06"
+      "id": "447332",
+      "title": "A Quiet Place",
+      "poster_path": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+      "overview": "A family is forced to live in silence while hiding from creatures that hunt by sound.",
+      "release_date": "2018-04-03"
     },
     {
-      "id": "363088",
-      "title": "Ant-Man and the Wasp",
-      "poster_path": "/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
-      "overview": "As Scott Lang awaits expiration of his term of house detention, Hope van Dyne and Dr. Hank Pym involve him in a scheme to rescue Mrs. van Dyne from the micro-universe into which she has fallen, while two groups of schemers converge on them with intentions of stealing Dr. Pym's inventions.",
-      "release_date": "2018-07-04"
+      "id": "447200",
+      "title": "Skyscraper",
+      "poster_path": "/5LYSsOPzuP13201qSzMjNxi8FxN.jpg",
+      "overview": "Framed and on the run, a former FBI agent must save his family from a blazing fire in the world's tallest building.",
+      "release_date": "2018-07-11"
+    },
+    {
+      "id": "400155",
+      "title": "Hotel Transylvania 3: Summer Vacation",
+      "poster_path": "/gjAFM4xhA5vyLxxKMz38ujlUfDL.jpg",
+      "overview": "Dracula, Mavis, Johnny and the rest of the Drac Pack take a vacation on a luxury Monster Cruise Ship, where Dracula falls in love with the ship's captain, Ericka, who's secretly a descendant of Abraham Van Helsing, the notorious monster slayer.",
+      "release_date": "2018-06-30"
+    },
+    {
+      "id": "337167",
+      "title": "Fifty Shades Freed",
+      "poster_path": "/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
+      "overview": "Believing they have left behind shadowy figures from their past, newlyweds Christian and Ana fully embrace an inextricable connection and shared life of luxury. But just as she steps into her role as Mrs. Grey and he relaxes into an unfamiliar stability, new threats could jeopardize their happy ending before it even begins.",
+      "release_date": "2018-01-17"
     }
   ]
 }
