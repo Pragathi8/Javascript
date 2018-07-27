@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/webpack/bin/webpack.js",
-    "server": "webpack-dev-server --open"
+    "server": "webpack-dev-server --open",
+    "eslint": "npx eslint src/js"
   },
   "keywords": [],
   "author": "",
