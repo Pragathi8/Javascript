@@ -1,21 +1,18 @@
-import {addToJsonServer} from './service';
-import {globalPopularList} from '../first';
+import { addToJsonServer } from './service';
+import globalPopularList from '../first';
 
-export function getMovieDetails(movieId) {
-    console.log(movieId);
-    console.log("length:" + globalPopularList.length);
-    for (let i in globalPopularList) {
-        let global = globalPopularList[i];
-        for (let movie in global) {
-            if (global[movie].id == movieId) {
-                let title = global[movie].title;
-                let image = global[movie].poster_path;
-                let desc = global[movie].overview;
-                let relDate = global[movie].release_date;
-                addToJsonServer(movieId, title, image, desc, relDate);
-                break;
-            }
-        }
+export default function (movieId) {
+  for (let i = 0; i < globalPopularList.length; i += 1) {
+    const global = globalPopularList[i];
+    for (let movie = 0; movie < global.length; movie += 1) {
+      if (global[movie].id === parseInt(movieId, 10)) {
+        const title = global[movie].title;
+        const image = global[movie].poster_path;
+        const desc = global[movie].overview;
+        const relDate = global[movie].release_date;
+        addToJsonServer(movieId, title, image, desc, relDate);
+        break;
+      }
     }
+  }
 }
-

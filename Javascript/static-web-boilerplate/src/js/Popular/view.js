@@ -1,9 +1,9 @@
-export function createCards(movies){
-    let popular="";
-    movies.map((movie) => {
-        let desc = movie.overview;
-        let description = desc.substring(0, 150);
-        popular += `
+export default function (movies) {
+  let popular = '';
+  movies.map((movie) => {
+    const desc = movie.overview;
+    const description = desc.substring(0, 150);
+    popular += `
         <div class="card mb-4 listOfPop">
             <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="Card image cap" class="popup-img">
             <span class='right'>
@@ -21,6 +21,7 @@ export function createCards(movies){
         </div>
         </div>
         `;
-    })
     return popular;
+  });
+  return popular;
 }

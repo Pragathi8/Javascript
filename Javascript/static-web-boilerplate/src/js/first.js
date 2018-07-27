@@ -1,31 +1,29 @@
-const jQuery = require("jquery");
-import {getMovieDetails} from './Collection/controller';
-import {retriveFromJson,removeDetails} from './Collection/service';
-import {popularMoviesList} from './Popular/controller';
-import {searchResult} from './Search/controller';
+import getMovieDetails from './Collection/controller';
+import { retriveFromJson, removeDetails } from './Collection/service';
+import popularMoviesList from './Popular/controller';
+import searchResult from './Search/controller';
 
-let globalPopularList = [];
-export { globalPopularList };
+const jQuery = require('jquery');
 
-document.getElementById("popupId").addEventListener('click', searchResult);
-function eventListener(){
-    jQuery(document).on("click", ".favorite", function () {
-        let movieId = this.name;
-        console.log(movieId);
-        getMovieDetails(movieId);
-        retriveFromJson();
-    })
-    jQuery(document).on("click", ".delete", function () {
-        let movieId = this.name;
-        removeDetails(movieId);
-        retriveFromJson();
-    })
+const globalPopularList = [];
+export default globalPopularList;
+
+document.getElementById('popupId').addEventListener('click', searchResult);
+function eventListener() {
+  jQuery(document).on('click', '.favorite', function () {
+    const movieId = this.name;
+    getMovieDetails(movieId);
+    retriveFromJson();
+  });
+  jQuery(document).on('click', '.delete', function () {
+    const movieId = this.name;
+    removeDetails(movieId);
+    retriveFromJson();
+  });
 }
 
-jQuery(document).ready(function () {
-    popularMoviesList();
-    retriveFromJson();
-    eventListener();
-})
-
-
+jQuery(document).ready(() => {
+  popularMoviesList();
+  retriveFromJson();
+  eventListener();
+});

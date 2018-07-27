@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb-base",
+    "env" : {
+        "browser": true
+    },
+    "rules": {
+        "prefer-destructuring": ["error", {"object": false, "array": false}],
+        "import/no-cycle": "off"
+    }
+}

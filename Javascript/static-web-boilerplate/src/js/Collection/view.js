@@ -1,9 +1,9 @@
-export function viewCollection(movies){
-    let collection="";
-    movies.map((movie) => {
-        let desc = movie.overview;
-        let description = desc.substring(0, 150);
-        collection += `<div class="card mb-4 listOfPop">
+export default function (movies) {
+  let collection = '';
+  movies.map((movie) => {
+    const desc = movie.overview;
+    const description = desc.substring(0, 150);
+    collection += `<div class="card mb-4 listOfPop">
         <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="Card image cap" class="popup-img">
         <span class='right'>
           <button type="button" class="delete" name="${movie.id}" style="float:right"><i class="fas fa-trash"></i></button>
@@ -14,6 +14,7 @@ export function viewCollection(movies){
       <p class="card-text"><small class="text-muted" style="float:right">${movie.release_date}</small></p>
     </div>
   </div>`;
-    })
     return collection;
+  });
+  return collection;
 }
